@@ -66,9 +66,9 @@ data "terraform_remote_state" "hcp" {
   backend = "remote"
 
   config = {
-    organization = "hashicorp-aws-zero-trust"
+    organization = "Jlinn-Demo"
     workspaces = {
-      name = "hcp"
+      name = "hcp-demo"
     }
   }
 }
