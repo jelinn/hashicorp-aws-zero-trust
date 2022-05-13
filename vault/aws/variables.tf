@@ -8,7 +8,7 @@ variable "default_tags" {
   description = "Default tags to add to infrastructure resources"
   default = {
     Service = "hashicups"
-    Purpose = "aws-reinvent-2021"
+    Purpose = "jlinn-demo"
   }
 }
 
@@ -27,9 +27,9 @@ data "terraform_remote_state" "hcp" {
   backend = "remote"
 
   config = {
-    organization = "hashicorp-aws-zero-trust"
+    organization = "JLinn-Demo"
     workspaces = {
-      name = "hcp"
+      name = "hcp-demo"
     }
   }
 }
