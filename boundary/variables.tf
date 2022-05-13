@@ -2,7 +2,7 @@ data "terraform_remote_state" "infrastructure" {
   backend = "remote"
 
   config = {
-    organization = "hashicorp-aws-zero-trust"
+    organization = "JLinn-Demo"
     workspaces = {
       name = "infrastructure"
     }
@@ -13,9 +13,9 @@ data "terraform_remote_state" "hcp" {
   backend = "remote"
 
   config = {
-    organization = "hashicorp-aws-zero-trust"
+    organization = "JLinn-Demo"
     workspaces = {
-      name = "hcp"
+      name = "hcp-demo"
     }
   }
 }
@@ -24,9 +24,9 @@ data "terraform_remote_state" "vault" {
   backend = "remote"
 
   config = {
-    organization = "hashicorp-aws-zero-trust"
+    organization = "JLinn-Demo"
     workspaces = {
-      name = "vault-products"
+      name = "demo-vault-products"
     }
   }
 }
